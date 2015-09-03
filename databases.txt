@@ -1,0 +1,4 @@
+to take table specific dump using mysqldump and compress while creating it
+(works well with innodb as it doesnot asks for table locking)
+
+mysqldump -u username -p database tablename | gzip > database_tblname.sql.gz
